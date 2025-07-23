@@ -1,0 +1,148 @@
+:root {
+	--animation-time: 8s;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* background: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%); */
+
+body {
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+	position: relative;
+}
+
+.pop-up {
+	position: absolute;
+	border: 2px solid black;
+	border-radius: 20px;
+	height: 200px;
+	width: 300px;
+	background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 1) 50%);
+	opacity: 60%;
+	z-index: 1;
+	top: -50%;
+	left: 50%;
+	transform: translate(-50%, 50%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.show-pop-up {
+	animation: pop-up ease-in-out;
+	animation-duration: var(--animation-time);
+}
+
+@keyframes pop-up {
+	0% {
+		top: -40%;
+		left: 50%;
+		transform: translate(-50%, 40%);
+	}
+	5% {
+		top: -30%;
+		left: 50%;
+		transform: translate(-50%, 30%);
+	}
+	10% {
+		top: -20%;
+		left: 50%;
+		transform: translate(-50%, 20%);
+	}
+	15% {
+		top: -10%;
+		left: 50%;
+		transform: translate(-50%, 10%);
+	}
+	20% {
+		top: 0%;
+		left: 50%;
+		transform: translate(-50%, 0%);
+	}
+	25% {
+		top: 10%;
+		left: 50%;
+		transform: translate(-50%, -10%);
+	}
+	30% {
+		top: 20%;
+		left: 50%;
+		transform: translate(-50%, -20%);
+	}
+	35% {
+		top: 30%;
+		left: 50%;
+		transform: translate(-50%, -30%);
+	}
+	40% {
+		top: 40%;
+		left: 50%;
+		transform: translate(-50%, -40%);
+	}
+	45% {
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	50% {
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	55% {
+		top: 40%;
+		left: 50%;
+		transform: translate(-50%, -40%);
+	}
+	60% {
+		top: 30%;
+		left: 50%;
+		transform: translate(-50%, -30%);
+	}
+	65% {
+		top: 20%;
+		left: 50%;
+		transform: translate(-50%, -20%);
+	}
+	70% {
+		top: 10%;
+		left: 50%;
+		transform: translate(-50%, -10%);
+	}
+	75% {
+		top: 0%;
+		left: 50%;
+		transform: translate(-50%, 0%);
+	}
+	80% {
+		top: -10%;
+		left: 50%;
+		transform: translate(-50%, 10%);
+	}
+	85% {
+		top: -20%;
+		left: 50%;
+		transform: translate(-50%, 20%);
+	}
+	90% {
+		top: -30%;
+		left: 50%;
+		transform: translate(-50%, 30%);
+	}
+	95% {
+		top: -40%;
+		left: 50%;
+		transform: translate(-50%, 40%);
+	}
+	100% {
+		top: -50%;
+		left: 50%;
+		transform: translate(-50%, 50%);
+	}
+}
